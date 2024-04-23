@@ -14,4 +14,4 @@ ___
   - Gnome sort
   - Shell sort
   - Merge sort
-  - Radix sort (MSD and LSD)
+  - Radix sort (LSD)
