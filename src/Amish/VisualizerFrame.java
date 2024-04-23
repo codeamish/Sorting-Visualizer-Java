@@ -233,7 +233,7 @@ public class VisualizerFrame extends JFrame {
     private final int DEFAULT_SPEED = 20;
     private final int DEFAULT_SIZE = 100;
 
-    private final String[] Sorts = {"Bubble", "Selection", "Insertion", "Gnome", "Merge", "Radix LSD", "Radix MSD", "Shell", "Quandrix", "Bubble(fast)", "Selection(fast)", "Insertion(fast)", "Gnome(fast)"};
+    private final String[] Sorts = {"Bubble", "Selection", "Insertion", "Gnome", "Merge", "Radix LSD", "Shell", "Bubble(fast)", "Selection(fast)", "Insertion(fast)", "Gnome(fast)"};
 
     private int sizeModifier;
 
@@ -252,7 +252,7 @@ public class VisualizerFrame extends JFrame {
     private GridBagConstraints c;
 
     public VisualizerFrame(){
-        super("Sorting Visualizer");
+        super("VisualSort");
 
         start = new JButton("Start");
         buttonWrapper = new JPanel();

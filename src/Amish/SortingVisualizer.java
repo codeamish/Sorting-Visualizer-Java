@@ -79,19 +79,10 @@ public class SortingVisualizer {
 				break;
 
 			case "Radix LSD":
-				sortingThread = new Thread(new RadixSort(toBeSorted, frame, true));
+				sortingThread = new Thread(new RadixSort(toBeSorted, frame));
 				break;
-
-			case "Radix MSD":
-				sortingThread = new Thread(new RadixSort(toBeSorted, frame, false));
-				break;
-
 			case "Shell":
 				sortingThread = new Thread(new ShellSort());
-				break;
-
-			case "Quandrix":
-			  sortingThread = new Thread(new QuandrixSort());
 				break;
 
 			case "Bubble(fast)":
