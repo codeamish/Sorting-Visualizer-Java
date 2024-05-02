@@ -9,7 +9,6 @@ public class RadixSort implements Runnable{
 	
 	private Integer[] toBeSorted;
 	private VisualizerFrame frame;
-	
 	public RadixSort(Integer[] toBeSorted, VisualizerFrame frame) {
 		this.toBeSorted = toBeSorted;
 		this.frame = frame;

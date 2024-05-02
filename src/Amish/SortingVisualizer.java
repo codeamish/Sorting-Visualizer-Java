@@ -15,7 +15,6 @@ public class SortingVisualizer {
 	public static int sortDataCount = 100;
 	public static int sleep = 20;
 	public static int blockWidth;
-	// Stepped depicts whether the values are incremental or random. True is incremental.
 	public static boolean stepped = false;
 
 	public static void main(String[] args) {
@@ -25,8 +24,6 @@ public class SortingVisualizer {
 	}
 
 	public static void resetArray(){
-		// If we are currently in a sorting method, then isSorting should be true
-		// We do not want to reinitialize/reset the array mid sort.
 		if (isSorting) return;
 		toBeSorted = new Integer[sortDataCount];
 		blockWidth = (int) Math.max(Math.floor(500/sortDataCount), 1);
@@ -37,7 +34,6 @@ public class SortingVisualizer {
 				toBeSorted[i] = (int) (sortDataCount*Math.random());
 			}
 		}
-		// If we're using incremental values, they are already sorted. This shuffles it.
 		if (stepped) {
 			ArrayList<Integer> shuffleThis = new ArrayList<>();
 			for (int i = 0; i < toBeSorted.length; i++) {
